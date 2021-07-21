@@ -93,7 +93,7 @@ class Router
         when 10
           @user = nil
           @running = false
-        elsex
+        else
             puts "Unrecognized command"
         end
     end

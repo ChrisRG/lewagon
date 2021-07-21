@@ -9,11 +9,11 @@ class SessionsController
   def sign_in
     # Check username and password
     # Ask the user for username
-    user_name = @view.ask_for_username
+    username = @view.ask_for_username
     # Ask user for password
     password = @view.ask_for_password
     # Check if there is a user with that username.
-    user = @employee_repo.find_by_username(user_name)
+    user = @employee_repo.find_by_username(username)
     # if there is such a user, check the password.
     if user && user.password == password
       @view.success(user)
