@@ -68,8 +68,8 @@ class Router
 
       def delivery_action(choice)
         case choice
-        when 1 then @orders_controller.list_my_orders(@current_user)
-        when 2 then @orders_controller.mark_as_delivered(@current_user)
+        when 1 then @orders_controller.list_my_orders(@user)
+        when 2 then @orders_controller.mark_as_delivered(@user)
         when 3 then @user = nil
         when 4
           @user = nil
