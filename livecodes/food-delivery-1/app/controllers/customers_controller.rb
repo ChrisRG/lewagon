@@ -10,7 +10,7 @@ class CustomersController
         name = @customers_view.ask_user_for(:name)
         address = @customers_view.ask_user_for(:address)
         customer = Customer.new(name: name, address: address)
-        @customer_repo.add(customer)
+        @customer_repo.create(customer)
     end
 
     def list

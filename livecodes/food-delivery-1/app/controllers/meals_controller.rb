@@ -10,7 +10,7 @@ class MealsController
         name = @meals_view.ask_user_for(:name)
         price = @meals_view.ask_user_for(:price).to_i
         meal = Meal.new(name: name, price: price)
-        @meal_repo.add(meal)
+        @meal_repo.create(meal)
     end
 
     def list

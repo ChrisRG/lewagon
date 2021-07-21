@@ -11,7 +11,7 @@ class SessionsView
 
   def success(user)
     puts "Welcome to the Food Delivery App."
-    puts "Signed in as: #{user.user_name}"
+    puts "Signed in as: #{user.username}"
   end
 
   def failure

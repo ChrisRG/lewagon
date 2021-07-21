@@ -5,7 +5,7 @@ require_relative 'base_repository'
 class EmployeeRepository < BaseRepository
 
   def find_by_username(user_name)
-    @elements.find { |element| element.user_name == user_name }
+    @elements.find { |element| element.username == user_name }
   end
 
 
